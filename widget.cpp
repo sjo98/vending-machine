@@ -12,12 +12,12 @@ Widget::Widget(QWidget *parent)
     ui->coffee100->setEnabled(false);
     ui->tea150->setEnabled(false);
     ui->milk200->setEnabled(false);
-
+    /*
     connect(ui->won10,SIGNAL(signal1()),this,SLOT(won10_clicked()));
     connect(ui->won50,SIGNAL(clicked()),this,SLOT(won50_clicked()));
     connect(ui->won100,SIGNAL(clicked()),this,SLOT(won100_clicked()));
     connect(ui->won500,SIGNAL(clicked()),this,SLOT(won500_clicked()));
-
+    */
 }
 
 Widget::~Widget()
@@ -50,6 +50,7 @@ void Widget::Money(int coin)
         ui->milk200->setEnabled(true);
     }
 
+    /*
     connect(ui->won10,SIGNAL(signal1()),this,SLOT(won10_clicked()));
     connect(ui->won50,SIGNAL(clicked()),this,SLOT(won50_clicked()));
     connect(ui->won100,SIGNAL(clicked()),this,SLOT(won100_clicked()));
@@ -58,7 +59,7 @@ void Widget::Money(int coin)
     connect(ui->tea150,SIGNAL(clicked()),this,SLOT(tea_clicked()));
     connect(ui->coffee100,SIGNAL(clicked()),this,SLOT(coffee_clicked()));
     connect(ui->reset,SIGNAL(clicked()),this,SLOT(reset_clicked()));
-
+    */
 }
 
 void Widget::reset_clicked(){
